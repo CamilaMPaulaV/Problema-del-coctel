@@ -1,6 +1,6 @@
 # Problema-del-coctel
 ## Introducción 
-A continuación encontrará los pasos necesarios para realizar un código en pyhton que permita concentrarse en una sola fuente sonora dentro de un entorno con variedad de emisores de sonido. Para lo anterior se realizó la grabación de dos audios al mismo tiempo, tomando un ruido blanco y la separación entre cada micrófono presente en la sala, de esta manera se plasmarán los resultados obtenidos y la explicación detallada del código, brindando las herramientas para su utilización en situaciones donde hay interferencias acústicas y se desea aislar una señal específica, como en el caso del desarrollo de dispositivos auditivos.
+A continuación encontrará los pasos necesarios para realizar un código en pyhton que permita concentrarse en una sola fuente sonora dentro de un entorno con variedad de emisores de sonido haciendo uso del algoritmo de Análisis de Componentes Independientes (ICA) para separar fuentes sonoras . Para lo anterior se realizó la grabación de dos audios al mismo tiempo, tomando un ruido blanco y la separación entre cada micrófono presente en la sala, de esta manera se plasmarán los resultados obtenidos y la explicación detallada del código, brindando las herramientas para su utilización en situaciones donde hay interferencias acústicas y se desea aislar una señal específica, como en el caso del desarrollo de dispositivos auditivos.
 
 ## Resultados
 Primero se ubicaron dos micrófonos de manera estratégica en el espacio de grabación de tal manera que ambos pudieran captar señales provenientes de las dos fuentes de información (personas). Posterior a esto se inicializó la grabación, adquiriendo las señales que se van a analizar. Además, se registró el ruido blanco presente en la sala de filmación. Una vez realizado lo anteriormente mencionado se obtuvo el análisis temporal representado en las siguientes gráficas:
@@ -21,6 +21,19 @@ Adicional a esto se obtuvo el espectograma de ambos micrófonos, el cual permite
 <div align="center">
   <img src="https://github.com/user-attachments/assets/70d6543e-1d8d-4e45-9066-eb16b0af05f2" width="500" height="200">
 </div>
+
+Por último se obtuvo la separación de las voces para ambos casos, encontrando el SNR de la señal original con la separada y de la señal original con el ruido blanco. A continuación se presetan las gráficas y los datos obtenidos:
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/2fb5f950-f273-4267-9310-54e80ce07041" width="500" height="200">
+</div>
+
+SNR entre Mic 1 y su fuente separada: 37.92 dB
+SNR entre Mic 2 y su fuente separada: -3.58 dB
+SNR entre Voz1 y Ruido: -1.43 dB
+SNR entre Voz2 y Ruido: -1.04 dB
+
+De acuerdo con los resultados obtenidos del SNR se infiere que la separación de la señal en el micrófono 1 es muy efectiva. Un SNR alto sugiere que la fuente ha sido correctamente aislada con poco ruido residual.
+Para el caso del micrófono 2 el ruido es más fuerte que la señal de interés, lo que indica que la separación no fue efectiva en este caso. En el SNR de las voces tenemos que a voz es apenas más débil que el ruido, lo que indica que el entorno es muy ruidoso y que la separación de fuentes no fue del todo efectiva. En la voz 2 se presenta un escenario similar al caso anterior, en el cual el ruido sigue estando al mismo nivel que la señal de voz, lo que puede dificultar l
 
 ## Instrucciones
 1. Se importan las librerías numpy para las operaciones matemáticas, matplot para los gráficos, scipy.io,wavfile para leer y escribir los archivos WAP (audios), spicy.signal para calcular y visualizar el espectro de las señales y sklearn para aplicar el algoritmo de separación de fuentes mediante ICA. 
