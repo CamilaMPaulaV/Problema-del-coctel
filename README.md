@@ -1,3 +1,3 @@
 # Problema-del-coctel
-##Introducción
+## Introducción
 ## Resultados
