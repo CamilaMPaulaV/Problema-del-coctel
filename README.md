@@ -37,6 +37,13 @@ Para el caso del micrófono 2 el ruido es más fuerte que la señal de interés,
 
 AUDIOS SEPARADOS:
 
+Voz 1:
+https://github.com/user-attachments/assets/8998c038-7742-4589-9cdc-62049e93663d
+
+Voz 2:
+https://github.com/user-attachments/assets/2c69e7fc-2665-4dd8-a64f-f65cf3a9f647
+
+
 
 1.	¿Cómo afecta la posición relativa de los micrófonos y las fuentes sonoras en la efectividad de la separación de señales?
 La posición relativa de los micrófonos afecta dado que al no haber una distancia adecuada las frecuencias cambian, lo que quiere decir que en caso de que los micrófonos queden muy cercanos unos a otros se tendrán frecuencias más parecidas y menos diversidad en la señal, lo que generará mucho más difícil el proceso de separar los audios; en cambio si los micrófonos se encuentran a una distancia prudente entre sí las frecuencias serán más distintas con mayor diversidad y por lo tanto facilitara y volverá más preciso el método de ICA. Cabe recalcar que la orientación de los micrófonos también es importante dado que, si se orientan en direcciones diferentes, se aumenta la diversidad de las señales y mejora la precisión de la separación.
