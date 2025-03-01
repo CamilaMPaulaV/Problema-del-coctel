@@ -31,7 +31,7 @@ SNR entre Mic 2 y su fuente separada: -3.58 dB
 SNR entre Voz 1 y Ruido: -1.43 dB
 SNR entre Voz 2 y Ruido: -1.04 dB
 
-De acuerdo con los resultados obtenidos del SNR se infiere que la separación de la señal en el micrófono 1 es muy efectiva. Un SNR alto sugiere que la fuente ha sido correctamente aislada con poco ruido residual.  
+De acuerdo con los resultados obtenidos del SNR se infiere que la separación de la señal en el micrófono 1 es muy efectiva. Un SNR alto sugiere que la fuente ha sido correctamente aislada con poco ruido residual.    
 
 Para el caso del micrófono 2 el ruido es más fuerte que la señal de interés, lo que indica que la separación no fue efectiva en este caso. En el SNR de las voces tenemos que la voz es apenas más débil que el ruido, lo que indica que el entorno es muy ruidoso y que la separación de fuentes no fue del todo efectiva. En la voz 2 se presenta un escenario similar al caso anterior, en el cual el ruido sigue estando al mismo nivel que la señal de voz, lo que puede dificultar la nitidez de la información.
 
