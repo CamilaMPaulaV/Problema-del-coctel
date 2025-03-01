@@ -34,6 +34,9 @@ SNR entre Voz 2 y Ruido: -1.04 dB
 De acuerdo con los resultados obtenidos del SNR se infiere que la separación de la señal en el micrófono 1 es muy efectiva. Un SNR alto sugiere que la fuente ha sido correctamente aislada con poco ruido residual.
 Para el caso del micrófono 2 el ruido es más fuerte que la señal de interés, lo que indica que la separación no fue efectiva en este caso. En el SNR de las voces tenemos que la voz es apenas más débil que el ruido, lo que indica que el entorno es muy ruidoso y que la separación de fuentes no fue del todo efectiva. En la voz 2 se presenta un escenario similar al caso anterior, en el cual el ruido sigue estando al mismo nivel que la señal de voz, lo que puede dificultar la nitidez de la información.
 
+AUDIOS SEPARADOS:
+
+
 1.	¿Cómo afecta la posición relativa de los micrófonos y las fuentes sonoras en la efectividad de la separación de señales?
 La posición relativa de los micrófonos afecta dado que al no haber una distancia adecuada las frecuencias cambian, lo que quiere decir que en caso de que los micrófonos queden muy cercanos unos a otros se tendrán frecuencias más parecidas y menos diversidad en la señal, lo que generará mucho más difícil el proceso de separar los audios; en cambio si los micrófonos se encuentran a una distancia prudente entre sí las frecuencias serán más distintas con mayor diversidad y por lo tanto facilitara y volverá más preciso el método de ICA. Cabe recalcar que la orientación de los micrófonos también es importante dado que, si se orientan en direcciones diferentes, se aumenta la diversidad de las señales y mejora la precisión de la separación.
 
