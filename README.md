@@ -3,18 +3,24 @@
 A continuación encontrará los pasos necesarios para realizar un código en pyhton que permita concentrarse en una sola fuente sonora dentro de un entorno con variedad de emisores de sonido. Para lo anterior se realizó la grabación de dos audios al mismo tiempo, tomando un ruido blanco y la separación entre cada micrófono presente en la sala, de esta manera se plasmarán los resultados obtenidos y la explicación detallada del código, brindando las herramientas para su utilización en situaciones donde hay interferencias acústicas y se desea aislar una señal específica, como en el caso del desarrollo de dispositivos auditivos.
 
 ## Resultados
-Primero se ubicaron dos micrófonos de manera estratégica en el espacio de grabación de tal manera que ambos pudieran captar señales provenientes de las dos fuentes de información (personas). Posterior a esto se inicializó la grabación, adquiriendo las señales que se van a analizar. Además, se registró el ruido blanco presente en la sala de filmación. Una vez realizado lo anteriormente mencionado se obtuvo el análisis temporal representado en las siguientes gráficas
+Primero se ubicaron dos micrófonos de manera estratégica en el espacio de grabación de tal manera que ambos pudieran captar señales provenientes de las dos fuentes de información (personas). Posterior a esto se inicializó la grabación, adquiriendo las señales que se van a analizar. Además, se registró el ruido blanco presente en la sala de filmación. Una vez realizado lo anteriormente mencionado se obtuvo el análisis temporal representado en las siguientes gráficas:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/4f4eeffa-ad47-4814-9b5c-363742495334" width="500" height="200">
 </div>
 De acuerdo con las gráficas correspondientes al análisis temporal se pudo apreciar que ambas señales cunetan con una forma muy similar, debido a que la fuente de información sonora captada era la misma para ambos casos. También se observó que existe un leve desfase entre ambas señales debido a que las fuentes sonoras no se encontraban a la misma distancia con ambos micrófonos.
 
-Después se realizó el análisis espectral por medio de la Transformada Rápida de Fourier (FFT), adquiriendo las siguientes gráficas
+
+Después se realizó el análisis espectral por medio de la Transformada Rápida de Fourier (FFT), adquiriendo las siguientes gráficas:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/6b386a65-8cd1-4dc5-b379-52ceb1e8a784" width="500" height="200">
 </div>
+El espectro de frecuencia muestra que la mayor parte de la energía de la señal está en bajas frecuencias características en la voz humana y algunos ruidos de fondo como el tráfico. Además se observa una caída en la amplitud a partir de los 5 kHz indicando que la señal no tiene muchas componentes agudas.
 
+Adicional a esto se obtuvo el espectograma de ambos micrófonos, el cual permite diferenciar en qué momentos y a qué frecuencias aparecen distintas voces, y en qué momentos una persona hablaba más fuerte o habían pausas en la conversación.
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/70d6543e-1d8d-4e45-9066-eb16b0af05f2" width="500" height="200">
+</div>
 
 ## Instrucciones
 1. Se importan las librerías numpy para las operaciones matemáticas, matplot para los gráficos, scipy.io,wavfile para leer y escribir los archivos WAP (audios), spicy.signal para calcular y visualizar el espectro de las señales y sklearn para aplicar el algoritmo de separación de fuentes mediante ICA. 
