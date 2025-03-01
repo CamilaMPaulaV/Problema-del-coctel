@@ -7,9 +7,9 @@ Primero se ubicaron dos micrófonos de manera estratégica en el espacio de grab
 <div align="center">
   <img src="https://github.com/user-attachments/assets/4f4eeffa-ad47-4814-9b5c-363742495334" width="500" height="200">
 </div>
-De acuerdo con las gráficas correspondientes al análisis temporal se pudo apreciar que ambas señales cuentan con una forma muy similar, debido a que la fuente de información sonora captada era la misma para ambos casos. También se observó que existe un leve desfase entre ambas señales debido a que las fuentes sonoras no se encontraban a la misma distancia con ambos micrófonos.  
+De acuerdo con las gráficas correspondientes al análisis temporal se pudo apreciar que ambas señales cuentan con una forma muy similar, debido a que la fuente de información sonora captada era la misma para ambos casos. También se observó que existe un leve desfase entre ambas señales debido a que las fuentes sonoras no se encontraban a la misma distancia con ambos micrófonos.   
 
-Después se realizó el análisis espectral por medio de la Transformada Rápida de Fourier (FFT), adquiriendo las siguientes gráficas:
+ Después se realizó el análisis espectral por medio de la Transformada Rápida de Fourier (FFT), adquiriendo las siguientes gráficas:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/6b386a65-8cd1-4dc5-b379-52ceb1e8a784" width="500" height="200">
 </div>
@@ -31,7 +31,8 @@ SNR entre Mic 2 y su fuente separada: -3.58 dB
 SNR entre Voz 1 y Ruido: -1.43 dB
 SNR entre Voz 2 y Ruido: -1.04 dB
 
-De acuerdo con los resultados obtenidos del SNR se infiere que la separación de la señal en el micrófono 1 es muy efectiva. Un SNR alto sugiere que la fuente ha sido correctamente aislada con poco ruido residual.
+De acuerdo con los resultados obtenidos del SNR se infiere que la separación de la señal en el micrófono 1 es muy efectiva. Un SNR alto sugiere que la fuente ha sido correctamente aislada con poco ruido residual.  
+
 Para el caso del micrófono 2 el ruido es más fuerte que la señal de interés, lo que indica que la separación no fue efectiva en este caso. En el SNR de las voces tenemos que la voz es apenas más débil que el ruido, lo que indica que el entorno es muy ruidoso y que la separación de fuentes no fue del todo efectiva. En la voz 2 se presenta un escenario similar al caso anterior, en el cual el ruido sigue estando al mismo nivel que la señal de voz, lo que puede dificultar la nitidez de la información.
 
 AUDIOS SEPARADOS:
