@@ -159,7 +159,7 @@ plt.show()
 
 
 ## Uso
- Problema del coctel por Camila Martínez y Paula Vega
+ Problema del coctel por Camila Martínez y Paula Vega  
  Publicado 28/02/25
 
  ## Referencias
